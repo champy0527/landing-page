@@ -38,8 +38,13 @@ header {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
 
-/* MAIN BANNER  */
+
+/* MAIN BANNER , FIRST WRAPPER */
 
 .container-1 {
     background-color: #1F2937;
@@ -80,7 +85,7 @@ header {
     border-radius: 4px;
 }
 
-/* SECOND CONTAINER */
+/* SECOND WRAPPER */
 
 .container-2 {
     background-color: #F9FAF8;    display: flex;
@@ -120,4 +125,78 @@ header {
     width: 150px;
     border: 2px solid #3882f6;
     border-radius: 16px;
+}
+
+/* THIRD WRAPPER  */
+
+.container-3 {
+    background-color: #E5E7EB;    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 48px 25%;
+}
+
+.quote, .author {
+    margin: 0px;
+}
+
+h2.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937
+}
+
+.author {
+    text-align: right;
+    font-weight: 700;
+}
+
+/* FOURTH WRAPPER */
+
+.modal {
+    background-color: #F9FAF8;    display: flex;
+    justify-content: center; 
+    padding: 48px 25%;
+}
+
+.modal-wrapper {
+    display: flex;
+    width: 50vw;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 32px 96px;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.modal-desc {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.button {
+    width: 90px;
+    flex-shrink: 0;
+    border: 2px solid #F9FAF8;
+    border-radius: 4px;
+    background-color: #3882f6;;
+    color: #F9FAF8;
+    padding: 4px 8px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
