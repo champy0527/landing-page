@@ -30,6 +30,7 @@ body {
     flex-direction: column;
     flex: 1;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header, footer {
@@ -81,11 +82,13 @@ a {
     top: 72px;
     background-color: #00846F;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 30rem;
+    height: auto;
     width: 100vw;
     box-sizing: border-box;
+    padding-bottom: 32px;
 }
 
 @media only screen and (max-width: 680px) {
@@ -96,7 +99,7 @@ a {
 
 .banner-img {
     display: flex;
-    background: url("./images/champy-sq-dark.jpg") left center no-repeat;
+    background: url("./images/champy-sq-dark.jpg") center center no-repeat;
     background-size: cover;
     flex-grow: 0;
     height: 30em;
@@ -108,7 +111,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 32px;
+    padding: 0 32px;
     background-color: #00846F;
 }
 
@@ -256,6 +259,12 @@ h2.quote {
     justify-content: center; 
     padding: 48px 25%;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 680px) {
+    .modal, .modal-wrapper {
+      flex-direction: column;
+    }
 }
 
 .modal-wrapper {
