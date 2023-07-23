@@ -1,5 +1,28 @@
+@font-face {
+    font-family: 'Work Sans'; 
+    src: url('fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+  
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('./fonts/Merriweather-Regular.ttf') format('truetype');
+    src: url('./fonts/Merriweather-Italic.ttf') format('truetype'); 
+    src: url('./fonts/Merriweather-LightItalic.ttf') format('truetype'); 
+}  
+
+  
+@media only screen and (max-width: 680px) {
+    html {
+      font-size: 14px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
     margin: 0 ;
     padding: 0;
     min-height: 100vh;
@@ -11,8 +34,8 @@ body {
 
 header, footer {
     height: 72px;
-    background-color: #1F2937;
-    color: #f9faf8; 
+    background-color: #f9faf8;
+    color: #1F2937; 
     padding: 0 48px;
     margin: 0;
 }
@@ -21,116 +44,174 @@ header, footer {
 
 header {
     display: flex;
+    flex: 1;
     justify-content: space-between;
-    /* flex: 1; */
-    /* position: fixed;
-    margin-top: 0; */
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 .header-logo {
-    color:#F9FAF8;
+    color:#00575e;
     font-size: 24px;
+    flex-grow: 1;
+    font-size: 1em;
+    font-weight: 900;
 }
 
 .header-links {
     display: flex;
     gap: 16px;
     align-items: center;
+    font-size: 0.77em;
 }
 
 a {
     text-decoration: none;
-    color: #F9FAF8;
+    color: #1F2937;
 }
 
 
 /* MAIN BANNER , FIRST WRAPPER */
 
 .container-1 {
-    background-color: #1F2937;
-    color: #F9FAF8;
+    position: relative;
+    top: 72px;
+    background-color: #00846F;
     display: flex;
-    justify-content: space-between; 
-    margin: 0;
-    padding: 48px;
+    justify-content: space-between;
+    align-items: center;
+    height: 30rem;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 680px) {
+    .container-1 {
+      flex-wrap: wrap;
+    }
 }
 
 .banner-img {
-    width: 400px;
-    background-color: #a7a7a7;
-
-}
+    display: flex;
+    background: url("./images/champy-sq-dark.jpg") left center no-repeat;
+    background-size: cover;
+    flex-grow: 0;
+    height: 30em;
+} 
 
 .sub-cont-header {
-    flex: 2;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32px;
+    background-color: #00846F;
 }
 
 .information-header {
     font-size: 48px;
-    font-weight: 900;
+    /* text-transform: uppercase; */
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+    /* font-style: italic; */
+    color: #ffb048;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
 }
 
 .sub-cont-header > p {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #f9faf8;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    padding: 16px 0px;
+    margin: 0;
 }
 
 .sign-up {
-    background-color: #3882f6;
+    background-color: #F9FAF8;
     text-align: center;
     padding: 8px 16px;
     font-weight: 700;
-    color: #F9FAF8;
+    color: #00575e;
     border: none;
     border-radius: 4px;
+    margin-top: 8px;
+    font-size: 1.125em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* SECOND WRAPPER */
 
 .container-2 {
-    background-color: #F9FAF8;    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+    top: 72px;
+    background-color: #C2D3CD;    
+    display: flex;
     justify-content: space-between; 
     flex-direction: column;
 }
 
 .container-2 > h2 {
-    color: #1F2937;
-    font-size: 36px;
-    font-weight: 900;
+    color: #070452;
+    font-size: 38px;
+    font-weight: 800;
     text-align: center;
+    padding-top: 32px;
+    font-family: 'Work Sans', sans-serif;
+    /* text-transform: uppercase; */
 }
 
 .sub-cont-2 {
-    color: #1F2937;
+    color: #00575e;
     display: flex;
     margin: 0;
     padding: 48px;    
     gap: 32px;
     justify-content: center;
     flex-grow: 0;
+    flex-wrap: wrap;
 }
 
 .card {
     text-align: center;
     font-size: 14px;
-    flex-basis: 150px;
+    width: 200px;
+    height: auto;
 }
 
 .text {
     padding-top: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sub-cont-2 img {
-    height: 150px;
-    width: 150px;
-    border: 2px solid #3882f6;
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid #3882f6; */
     border-radius: 16px;
 }
 
 /* THIRD WRAPPER  */
 
 .container-3 {
-    background-color: #E5E7EB;    display: flex;
+    position: relative;
+    top: 72px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #E5E7EB;    
+    display: flex;
     justify-content: center; 
     flex-direction: column;
     padding: 48px 25%;
@@ -138,34 +219,51 @@ a {
 
 .quote, .author {
     margin: 0px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: #707070;
 }
 
 h2.quote {
-    font-size: 36px;
+    font-size: 22spx;
     font-style: italic;
     font-weight: 100;
-    color: #1F2937
+    color: #070452
+}
+
+.container-3 > h2 {
+    text-align: justify;
+    padding-bottom: 16px;
 }
 
 .author {
     text-align: right;
     font-weight: 700;
+    font-style: normal; 
+    color: #3a4553;
+    font-family: 'Work Sans', sans-serif;
 }
 
 /* FOURTH WRAPPER */
 
 .modal {
-    background-color: #F9FAF8;    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+    top: 72px;
+    background-color: #F9FAF8;    
+    display: flex;
     justify-content: center; 
     padding: 48px 25%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .modal-wrapper {
     display: flex;
     width: 50vw;
-    background-color: #3882f6;
-    color: #F9FAF8;
-    padding: 32px 96px;
+    background-color: #FFB048;
+    color: #1F2937;
+    padding: 32px 15%;
     border-radius: 8px;
     justify-content: space-between;
     align-items: center;
@@ -180,16 +278,17 @@ h2.quote {
 
 .modal-desc {
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
+    padding-top: 8px;
 }
 
 .button {
     width: 90px;
     flex-shrink: 0;
-    border: 2px solid #F9FAF8;
+    border: 2px solid #1F2937;
     border-radius: 4px;
-    background-color: #3882f6;;
-    color: #F9FAF8;
+    background-color: #FFB048;
+    color: #1F2937;
     padding: 4px 8px;
 }
 
@@ -199,4 +298,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+    top: 72px;
+    font-size: 14px;
+    color: #00575e;
+    
 }
+
