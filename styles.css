@@ -100,7 +100,7 @@ a {
 
 .banner-img {
     display: flex;
-    background: url("./images/champy-sq-dark.jpg") center center no-repeat;
+    /* background: url("./images/champy-sq-dark.jpg") center center no-repeat; */
     background-size: cover;
     flex-grow: 0;
     height: 30em;
